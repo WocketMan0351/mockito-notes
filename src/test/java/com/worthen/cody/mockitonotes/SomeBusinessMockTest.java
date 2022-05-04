@@ -6,10 +6,10 @@ import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 
-class SomeBusinessMockTest {
+public class SomeBusinessMockTest {
 
 	@Test
-	void testFindMaxFromAllData() {
+	public void testFindMaxFromAllData() {
 		DataService dataServiceMock = mock(DataService.class);
 		// when this method is called, return this (in place of the stub)
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] { 24, 6, 15 });
@@ -21,7 +21,7 @@ class SomeBusinessMockTest {
 	}
 
 	@Test
-	void testFindMaxFromAllData_ForOneValue() {
+	public void testFindMaxFromAllData_ForOneValue() {
 		DataService dataServiceMock = mock(DataService.class);
 		// when this method is called, return this (in place of the stub)
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] { 6 });
